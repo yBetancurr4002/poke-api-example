@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Poke API Pascual Bravo</title>
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="text-center mb-4"> Buscardor </h1>
+  </div>
+
+  <!-- FORMULARIO DE BUSQUEDA -->
+  <form action="" id="searchForm" class="d-flex justify-content-center mb-4">
+    <input type="text" id="pokemonInput" class="form-control me-2" placeholder="Buscar por nombre o id...">
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </form>
+
+  <!-- POKEMON CARD -->
+   <div class="card mx-auto shadow-lg d-none" id="pokemonCard">
+    <img src="" alt="Pokemon img" class="card-img-top" id="pokemonImage">
+    <div class="card-body text-center">
+      <h5 class="card-title" id="pokemonName"></h5>
+      <p class="card-text" id="pokemonTypes"></p>
+      <ul class="list-group listgroup-flush text-center" id="pokemonStats">
+        <!-- ESTO LO LLENAMOS CON JS -->
+      </ul>
+   
+   </div>
+
+   <script src="./script.js"></script>
+
+</body>
+</html>
